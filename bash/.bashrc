@@ -12,7 +12,7 @@ set-alias(){
 	alias grep='grep --color';
 	alias of='lsof -nP +c 15 | grep LISTEN';
 	alias vim='vim -c "let g:tty='\''$(tty)'\''"';
-	alias powerup='sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt au		toremove -y && sudo apt autoclean -y'
+	alias powerup='sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'
 }
 set-alias
 
