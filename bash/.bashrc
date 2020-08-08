@@ -7,7 +7,7 @@ export CLICOLOR=1;
 export LSCOLORS=gxfxcxdxbxegexabagacad;
 
 set-alias(){
-	alias ls='ls -alFG';
+	alias ls='ls -alFG --color';
 	alias cl='clear';
 	alias grep='grep --color';
 	alias of='lsof -nP +c 15 | grep LISTEN';
