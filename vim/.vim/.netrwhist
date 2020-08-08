@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/hushimi'
+let g:netrw_dirhist_0='/Users/kosuke/.vim/plugin'
+let g:netrw_dirhist_9='/Users/kosuke/.vim'
+let g:netrw_dirhist_8='/Users/kosuke/.vim/bundle'
+let g:netrw_dirhist_7='/Users/kosuke/.vim/bundle/previm'
+let g:netrw_dirhist_6='/Users/kosuke/.vim/bundle'
+let g:netrw_dirhist_5='/Users/kosuke/.vim'
+let g:netrw_dirhist_4='/Users/kosuke/.vim/bundle'
+let g:netrw_dirhist_3='/Users/kosuke/.vim'
+let g:netrw_dirhist_2='/Users/kosuke/.vim/autoload'

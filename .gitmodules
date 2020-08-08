@@ -1,0 +1,20 @@
+[submodule "open-browser.vim"]
+	path = open-browser.vim
+	url = https://github.com/tyru/open-browser.vim.git
+	branch = master
+[submodule "vim/.vim/pack/plugins/start/open-browser.vim"]
+	path = vim/.vim/pack/plugins/start/open-browser.vim
+	url = https://github.com/tyru/open-browser.vim.git
+	branch = master
+[submodule "vim/.vim/pack/plugins/start/previm"]
+	path = vim/.vim/pack/plugins/start/previm
+	url = https://github.com/previm/previm.git
+	branch = master
+[submodule "vim/.vim/pack/plugins/start/vim-markdown"]
+	path = vim/.vim/pack/plugins/start/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+	branch = master
+[submodule "vim/.vim/pack/plugins/start/vim-surround"]
+	path = vim/.vim/pack/plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+	branch = master
