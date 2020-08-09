@@ -28,3 +28,13 @@ if has('mouse')
 	endif
 endif
 
+"--------------------
+"Plugin Settings
+"Previm
+"--------------------
+let g:previm_disable_default_css = 1
+let g:previm_custom_css_path = '~/dotfiles/stylesheet/markdown.css'
+
+au BufRead,BufNewFile *.md set filetype=markdown
+"let g:previm_open_cmd = 'open -a "Google Chrome"' "for mac
+let g:previm_open_cmd = 'firefox'
