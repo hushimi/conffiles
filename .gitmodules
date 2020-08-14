@@ -21,3 +21,11 @@
 [submodule "vim/.vim/pack/plugins/start/emmet-vim"]
 	path = vim/.vim/pack/plugins/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim
+[submodule "vim/.vim/pack/plugins/start/nerdtree"]
+	path = vim/.vim/pack/plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+	branch = master
+[submodule "vim/.vim/pack/plugins/start/vim-javascript"]
+	path = vim/.vim/pack/plugins/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+	branch = master

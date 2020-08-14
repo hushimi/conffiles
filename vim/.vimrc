@@ -1,21 +1,24 @@
 set number
 set title
+set shiftwidth=2
 set tabstop=2
-filetype plugin on
-syntax on
 set backspace=indent,eol,start
 set autoindent
 set smartindent
 set autowrite
 set clipboard&
 set clipboard=unnamed
+set autoread
+set ignorecase
+set pastetoggle=<F2>
+filetype plugin on
+syntax on
 
 "Don't autofold anything
 set foldmethod=syntax
 let perl_fold=1
 set foldlevel=100
 
-set ignorecase
 
 if has('mouse')
 	set mouse=a
@@ -27,6 +30,19 @@ if has('mouse')
 		set ttymouse=xterm2
 	endif
 endif
+
+"-------------------------
+" auto complete settings
+"-------------------------
+inoremap { {}<ESC>i
+inoremap {<Enter> {<return><return>}<UP>
+inoremap ( ()<ESC>i
+inoremap (<ENTER> ()<Left><CR><ESC><S-o>
+inoremap [ []<ESC>i
+inoremap [<ENTER> []<Left><CR><ESC><S-o>
+inoremap " ""<ESC>i
+inoremap ' ''<ESC>i
+
 
 "--------------------
 "Plugin Settings
@@ -63,4 +79,9 @@ let g:user_emmet_settings = {
 \		}
 \	}
 \}
+
+"-------------------------
+"NERDTree settings
+"-------------------------
+map <C-n> :NERDTreeToggle<CR>
 
