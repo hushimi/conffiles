@@ -1,7 +1,5 @@
 set number
 set title
-set shiftwidth=2
-set tabstop=2
 set backspace=indent,eol,start
 set autoindent
 set smartindent
@@ -11,15 +9,28 @@ set clipboard=unnamed
 set autoread
 set ignorecase
 set pastetoggle=<F2>
+set expandtab
+set tabstop=2
+set shiftwidth=2
 filetype plugin on
 syntax on
 
+"-------------------------
 "Don't autofold anything
+"-------------------------
 set foldmethod=syntax
 let perl_fold=1
 set foldlevel=100
 
+"-------------------------
+"make spaces visible
+"-------------------------
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
+"-------------------------
+"mouse scroll
+"-------------------------
 if has('mouse')
 	set mouse=a
 	if has('mouse_sgr')
@@ -30,6 +41,7 @@ if has('mouse')
 		set ttymouse=xterm2
 	endif
 endif
+
 
 "-------------------------
 " auto complete settings
@@ -44,22 +56,15 @@ inoremap " ""<ESC>i
 inoremap ' ''<ESC>i
 
 
-"--------------------
-"Plugin Settings
-"Previm
-"--------------------
+"-------------------------
+" Previm settings
+"-------------------------
 let g:previm_disable_default_css = 1
-let g:previm_custom_css_path = '~/dotfiles/stylesheet/markdown.css'
+let g:previm_custom_css_path = '~/.vim/stylesheet/markdown.css'
 
-au BufRead,BufNewFile *.md set filetype=markdown
-"let g:previm_open_cmd = 'open -a "Google Chrome"' "for mac
-let g:previm_open_cmd = 'firefox'
-
-
-"--------------------
-"Plugin Settings
-"Emmet
-"--------------------
+"-------------------------
+"Emmet settings
+"-------------------------
 let g:user_emmet_settings = {
 \	'variables'	: {
 \		'lang' : "ja"
@@ -70,7 +75,7 @@ let g:user_emmet_settings = {
 \			'html:5': "<!DOCTYPE html>\n"
 \			."<html lang=\"${lang}\">\n"
 \			."<head>\n"
-\			."\t<meta charset=\"${charset}\">\n"
+\			."\t<meta charset=\"${charset}\">\n" 
 \			."\t<meta name=\"description\" content=\"\">\n"
 \			."\t<title></title>\n"
 \			."</head>\n"
@@ -85,3 +90,14 @@ let g:user_emmet_settings = {
 "-------------------------
 map <C-n> :NERDTreeToggle<CR>
 
+"-------------------------
+"vim-vue settings
+"-------------------------
+autocmd FileType vue syntax sync fromstart
+
+"-------------------------
+"molokai settings
+"-------------------------
+colorscheme molokai
+let g:molokai_origianl = 1
+let g:rehash256 = 1
